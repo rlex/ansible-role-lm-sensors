@@ -1,0 +1,9 @@
+---
+- name: Install lm-sensors
+  package:
+    name: lm-sensors
+    state: present
+  notify:
+    - run sensors-detect
+    - restart lm-sensors
+  when: ansible_virtualization_role != "guest"
