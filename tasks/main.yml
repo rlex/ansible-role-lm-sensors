@@ -1,7 +1,7 @@
 ---
 - name: Install lm-sensors
   package:
-    name: lm-sensors
+    name: "{{ lookup('vars', 'package_' + ansible_os_family | lower )}}"
     state: present
   notify:
     - run sensors-detect
