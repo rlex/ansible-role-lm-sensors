@@ -6,4 +6,4 @@
   notify:
     - run sensors-detect
     - restart lm-sensors
-  when: ansible_virtualization_role != "guest"
+  when: ansible_virtualization_role != "guest" or ansible_virtualization_role == "NA"
