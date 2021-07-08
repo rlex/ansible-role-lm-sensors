@@ -1,0 +1,3 @@
+galaxy_info:
+  author: Lex Rivera
+  description: Installs lm-sensors and starts it.

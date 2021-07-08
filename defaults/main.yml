@@ -1,0 +1,2 @@
+package_debian: lm-sensors
+package_redhat: lm_sensors
