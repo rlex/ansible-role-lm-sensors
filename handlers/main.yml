@@ -4,5 +4,5 @@
 
 - name: restart lm-sensors
   service:
-    name: lm-sensors
+    name: "{{ lookup('vars', 'package_' + ansible_os_family | lower )}}"
     state: restarted
